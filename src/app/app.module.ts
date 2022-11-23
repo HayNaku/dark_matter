@@ -14,6 +14,9 @@ import { DetailsComponent } from './pages/customer/details/details.component';
 import { FormsComponent } from './pages/customer/forms/forms.component';
 import { TableComponent } from './pages/customer/table/table.component';
 import { TablesComponent } from './pages/products/tables/tables.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 
 @NgModule({
   declarations: [
@@ -28,11 +31,13 @@ import { TablesComponent } from './pages/products/tables/tables.component';
     DetailsComponent,
     FormsComponent,
     TableComponent,
-    TablesComponent
+    TablesComponent,
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
